@@ -1,0 +1,13 @@
+[package]
+name = "zip-password-cracker"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+zip = "0.5.13"
+rpassword = "5.0.1"
+rayon = "1.5.1"
+clap = { version = "3.0", features = ["derive"] }
+
+[profile.release]
+opt-level = 3
